@@ -1,5 +1,5 @@
 all_places = []
-
+all_ways = []
 class ways:
     
     def __init__(self, From, To, fare="Unknown", means="Unknown"):
@@ -8,7 +8,10 @@ class ways:
         self.fare = fare
         self.means = [means]
 
-    # def get_ways(self, )
+        global all_ways
+        all_ways.append(self)
+
+    # def get_ways(self, 
 
 class places:
     def __init__(self, name, north=None, south=None, traffic = None):
